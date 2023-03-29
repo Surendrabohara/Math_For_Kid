@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Chivo Mono', monospace;
+    background-color: #e6e6e6;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(134, 67, 104);
+}
+.container ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 4px;
+    display: block;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.equation{
+    background-color: silver;
+    border-radius: 5px;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 10px 10px 10px;
+}
+.equation h1{
+    display: inline;
+    padding: 20px;
+}
+
+.answer{
+    font-size: 65px;
+    margin-right: 10px;
+}
+.answer h1{
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 10px;
+    
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#option1{
+    background-color: #fe4a49;
+    transition: 1s;
+}
+#option1:hover{
+    color: #fe4a49;
+    background-color: white;
+}
+
+#option2{
+    background-color: #2ab7ca;
+    transition: 1s;
+}
+#option2:hover{
+    color: #2ab7ca;
+    background-color: white;
+}
+
+#option3{
+    background-color: rebeccapurple;
+    transition: 1s;
+}
+#option3:hover{
+    color: rebeccapurple;
+    background-color: white;
+}
